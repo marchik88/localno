@@ -5,7 +5,7 @@ import type { TelegramAuthData } from '@telegram-auth/react';
 
 export default function HomePage() {
   const handleAuthCallback = async (data: TelegramAuthData) => {
-    console.log('Telegram Auth Data:', data);
+    console.log('Auth Data Sent to Server:', data);
 
     const response = await fetch('/api/telegram-login', {
       method: 'POST',
@@ -21,6 +21,7 @@ export default function HomePage() {
       console.error('Login failed:', result.error);
     }
   };
+
 
   return (
     <main className="flex flex-col items-center justify-center min-h-screen">
