@@ -27,7 +27,7 @@ export default function HomePage() {
       <h1 className="text-2xl font-bold mb-4">Welcome to My App</h1>
       <p className="mb-6">Sign in using Telegram</p>
       <LoginButton
-        botUsername="your_telegram_bot_username"
+        botUsername="marchugan_telegram_auth_bot"
         buttonSize="large"
         cornerRadius={5}
         showAvatar={true}
